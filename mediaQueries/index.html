@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            font-size: 200%;
+            color: white;
+            background-color: aqua;
+            font-weight: bold;
+        }
+
+        /* ekran boyutu 768px' e ulaşana kadar çalışır*/
+        /* [0-768] */
+        @media all and (max-width: 768px){ 
+            .div{
+                background-color: red;
+            }
+        } 
+        
+        /* ekran boyutu 1624px ve daha fazlası için çalışır */
+        /* [1624 - ...] */
+        /* all default olduğu için ayrıca yazmasak da olur*/ 
+        @media (min-width: 1624px){
+            .div{
+                background-color: black;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="div">MY DIV ELEMENT</div>
+</body>
+</html>
